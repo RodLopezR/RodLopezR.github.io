@@ -1,0 +1,11 @@
+# Ignore artifacts:
+node_modules
+docs
+old
+public
+README.md
+package-lock.json
+package.json
+.prettierignore
+.prettierrc.json
+.yarn.lock
