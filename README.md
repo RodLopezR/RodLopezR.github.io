@@ -1,2 +1,5 @@
 # RodLopezR.github.io
-GitHub Page Personal
+
+Hola visitante!
+
+Bienvenid@ a mi portafolio online!
