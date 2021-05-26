@@ -1,0 +1,30 @@
+{
+  "me": {
+    "fullName": "Rodrigo López Rojas",
+    "aboutMe": {
+      "fullName": "Nemecio Rodrigo López Rojas",
+      "email": "rlopez2512@gmail.com",
+      "website": "https://programadordeconfianza.com/",
+      "websiteTitle": "ProgramadorDeConfianza",
+      "title": "Acerca de mi",
+      "greeting": "Hola!",
+      "info": [
+        "Soy ingeniero informático de profesión, desde mis inicios me apasionó el desarrollo de software, comencé haciendo aplicaciones PHP hace más de 6 años y desde entonces he utilizado muchas tecnologías, librerías, frameworks en pro de generar soluciones tecnológicas de alto impacto.",
+        "He trabajado en instituciones de banca y seguros proporcionando soluciones móviles, web e integración de pasarelas de pagos con múltiples tecnologías. Además de cumplir roles de análisis de datos y generación de reportes de alto valor para la toma de decisiones.",
+        "Me fascina aprender y conocer cosas nuevas todos los días, me encanta la sensación de satisfacción tras conocer como funcionan las cosas. Respeto mucho el tiempo de las personas y valoro la puntualidad. Guitarrista renegado amante del rock y géneros fusión."
+      ]
+    }
+  },
+  "roles": ["Full-Stack Developer", "Movil Developer"],
+  "socialMedia": [
+    { "icon": "icon-twitter2", "url": "https://twitter.com/RodLopezDev" },
+    {
+      "icon": "icon-facebook2",
+      "url": "https://www.facebook.com/rodrigolop3z"
+    },
+    {
+      "icon": "icon-linkedin2",
+      "url": "https://www.linkedin.com/in/rodrigo-lopez-rojas/"
+    }
+  ]
+}

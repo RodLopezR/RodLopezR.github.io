@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
+import Config from '../data/Config.json';
 import Header from '../components/Header';
-import InfoView from '../components/InfoView';
+import AboutMe from '../components/AboutMe';
 import HistoryLine from '../components/HistoryLine';
 import ServiceView from '../components/ServiceView';
 import SkillsView from '../components/SkillsView';
@@ -10,21 +11,19 @@ import BlogView from '../components/BlogView';
 const App = () => {
   const [loader, setLoader] = useState(true);
 
-  useEffect(() => {
-    setTimeout(() => setLoader(false), 1000);
-  }, []);
+  useEffect(() => setTimeout(() => setLoader(false), 1000), []);
 
   return (
     <div className="page--wrapper">
       {loader ? <div className="fh5co-loader"></div> : null}
       <div id="page">
-        <Header />
-        <InfoView />
+        {Config.header.show && <Header />}
+        {Config.aboutme.show && <AboutMe />}
         <HistoryLine />
-        <ServiceView />
-        <SkillsView />
-        <PortafolioView />
-        <BlogView />
+        {Config.portfolio.show && <PortafolioView />}
+        {Config.skills.show && <SkillsView />}
+        {Config.services.show && <ServiceView />}
+        {Config.blog.show && <BlogView />}
         <div class="gototop js-top">
           <a href="#" class="js-gotop">
             <i class="icon-arrow-up22"></i>

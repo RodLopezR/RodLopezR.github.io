@@ -1,4 +1,6 @@
 import React from 'react';
+import EmploymentsDATA from '../../data/Employments.json';
+import StudiesDATA from '../../data/Studies.json';
 
 const HistoryLine = () => {
   return (
@@ -21,144 +23,58 @@ const HistoryLine = () => {
                   <h3>Experiencia de trabajo</h3>
                 </div>
               </li>
-              <li className="timeline-inverted animate-box">
-                <div className="timeline-badge">
-                  <i className="icon-suitcase"></i>
-                </div>
-                <div className="timeline-panel">
-                  <div className="timeline-heading">
-                    <h3 className="timeline-title">Full-Stack Engineer</h3>
-                    <span className="company">
-                      Continuum HQ - 07/2020 - Actualidad
-                    </span>
+              {EmploymentsDATA.map((item, index) => (
+                <li
+                  className={`${
+                    index % 2 === 1 ? 'timeline-inverted' : 'timeline-unverted'
+                  } animate-box`}
+                  key={index}
+                >
+                  <div className="timeline-badge">
+                    <i className="icon-suitcase"></i>
                   </div>
-                  <div className="timeline-body">
-                    <p>
-                      Encargado de liderar el proyecto ReactJS para agendamiento
-                      de citas para Teleconsulta. Respetando las métricas de
-                      calidad y cobertura de codigo, despliegue continuo, AB
-                      Testing, accesibilidad, usabilidad. Parte del equipo
-                      encargado de desarrollar el proyecto Back-End con
-                      DynamoDB, ExpressJS y envío de mails en una arquitectura
-                      serverless.
-                    </p>
+                  <div className="timeline-panel">
+                    <div className="timeline-heading">
+                      <h3 className="timeline-title">{item.role}</h3>
+                      <span className="company">
+                        {item.company} - {item.startWork} - {item.endWork}
+                      </span>
+                    </div>
+                    <div className="timeline-body">
+                      <p>{item.details}</p>
+                    </div>
                   </div>
-                </div>
-              </li>
-              <li className="animate-box timeline-unverted">
-                <div className="timeline-badge">
-                  <i className="icon-suitcase"></i>
-                </div>
-                <div className="timeline-panel">
-                  <div className="timeline-heading">
-                    <h3 className="timeline-title">Software Engineer</h3>
-                    <span className="company">INDRA - 10/2019 - 07/2020</span>
-                  </div>
-                  <div className="timeline-body">
-                    <p>
-                      Soporte, mantenimiento e implementación de mejoras.
-                      Implementación de pasarelas de pago. Scrum, JavaEE,
-                      Spring, PL/SQL, Oracle, AWS Lambda, Api Gateway.
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li className="timeline-inverted animate-box">
-                <div className="timeline-badge">
-                  <i className="icon-suitcase"></i>
-                </div>
-                <div className="timeline-panel">
-                  <div className="timeline-heading">
-                    <h3 className="timeline-title">Fullstack Developer</h3>
-                    <span className="company">
-                      CMAC Maynas - 02/2017 - 09/2019
-                    </span>
-                  </div>
-                  <div className="timeline-body">
-                    <p>
-                      Soporte, mantenimiento e implementación de mejoras. VB6.0,
-                      ASP.NET, ASP MVC4, Net.CORE, Android Development, JAVA
-                      SDK24, JavaEE, Reporting Services, MS SQL.
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li className="animate-box timeline-unverted">
-                <div className="timeline-badge">
-                  <i className="icon-suitcase"></i>
-                </div>
-                <div className="timeline-panel">
-                  <div className="timeline-heading">
-                    <h3 className="timeline-title">Web Developer</h3>
-                    <span className="company">IIAP - 2015 - 2016</span>
-                  </div>
-                  <div className="timeline-body">
-                    <p>
-                      Desarrollo aplicación móvil/web "Amazonía - Glosario
-                      Móvil", Desarrollo Sistema de reportes para el monitoreo
-                      de calidad de Agua. Desarrollo de Módulo Elearning. PHP,
-                      ASP MVC 4, LAravel, Android Development,
-                      HTML/CSS/Javascript.
-                    </p>
-                  </div>
-                </div>
-              </li>
-
+                </li>
+              ))}
               <br />
               <li className="timeline-heading text-center animate-box">
                 <div>
                   <h3>Estudios</h3>
                 </div>
               </li>
-              <li className="animate-box timeline-unverted">
-                <div className="timeline-badge">
-                  <i className="icon-graduation-cap"></i>
-                </div>
-                <div className="timeline-panel">
-                  <div className="timeline-heading">
-                    <h3 className="timeline-title">Ingles</h3>
-                    <span className="company">
-                      Michigan Corp - 02/2020 - Actualidad
-                    </span>
+              {StudiesDATA.map((item, index) => (
+                <li
+                  className={`${
+                    index % 2 === 1 ? 'timeline-inverted' : 'timeline-unverted'
+                  } animate-box`}
+                  key={index}
+                >
+                  <div className="timeline-badge">
+                    <i className="icon-suitcase"></i>
                   </div>
-                </div>
-              </li>
-              <li className="timeline-inverted animate-box">
-                <div className="timeline-badge">
-                  <i className="icon-graduation-cap"></i>
-                </div>
-                <div className="timeline-panel">
-                  <div className="timeline-heading">
-                    <h3 className="timeline-title">Maestría</h3>
-                    <span className="company">
-                      POSTGRADO/UNAP - 2018 - Actualidad
-                    </span>
+                  <div className="timeline-panel">
+                    <div className="timeline-heading">
+                      <h3 className="timeline-title">{item.degree}</h3>
+                      <span className="company">
+                        {item.company} - {item.startWork} - {item.endWork}
+                      </span>
+                    </div>
+                    <div className="timeline-body">
+                      <p>{item.details}</p>
+                    </div>
                   </div>
-                  <div className="timeline-body">
-                    <p>
-                      Maestría en Gestión de Tecnologías de Información e
-                      Ingeniería del Software.
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li className="animate-box timeline-unverted">
-                <div className="timeline-badge">
-                  <i className="icon-graduation-cap"></i>
-                </div>
-                <div className="timeline-panel">
-                  <div className="timeline-heading">
-                    <h3 className="timeline-title">Bachillerato</h3>
-                    <span className="company">UNAP - 2012 - 2016</span>
-                  </div>
-                  <div class="timeline-body">
-                    <p>
-                      Ingeniería de Sistemas e Informática en Universidad
-                      Nacional de la Amazonía Peruana.
-                    </p>
-                  </div>
-                </div>
-              </li>
+                </li>
+              ))}
             </ul>
           </div>
         </div>

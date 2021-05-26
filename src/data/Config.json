@@ -1,0 +1,26 @@
+{
+  "header": {
+    "show": true
+  },
+  "aboutme": {
+    "show": true
+  },
+  "employees": {
+    "show": true
+  },
+  "education": {
+    "show": true
+  },
+  "portfolio": {
+    "show": true
+  },
+  "services": {
+    "show": true
+  },
+  "skills": {
+    "show": true
+  },
+  "blog": {
+    "show": true
+  }
+}

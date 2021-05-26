@@ -1,4 +1,5 @@
 import React from 'react';
+import HeaderINFO from '../../data/Header.json';
 
 const Header = () => {
   return (
@@ -6,11 +7,14 @@ const Header = () => {
       id="fh5co-header"
       className="fh5co-cover js-fullheight"
       role="banner"
-      style={{ backgroundImage: 'url(assets/images/cover_bg_3.jpg)' }}
+      style={{
+        backgroundImage: 'url(assets/images/cover_bg_3.jpg)',
+        height: '100vh',
+      }}
       data-stellar-background-ratio="0.5"
     >
       <div className="overlay"></div>
-      <div className="container">
+      <div className="container" style={{ paddingTop: '16vh' }}>
         <div className="row">
           <div className="col-md-8 col-md-offset-2 text-center">
             <div className="display-t js-fullheight">
@@ -23,36 +27,26 @@ const Header = () => {
                   style={{ background: 'url(assets/images/user-3.png)' }}
                 ></div>
                 <h1>
-                  <span>Rodrigo López Rojas</span>
+                  <span>{HeaderINFO.me.fullName}</span>
                 </h1>
                 <h3>
-                  <span>Full-Stack Developer / Movil Developer</span>
+                  <span>
+                    {HeaderINFO.roles.reduce((prev, curr) => {
+                      return `${prev}${prev === '' ? '' : ' / '}${curr}`;
+                    }, '')}
+                  </span>
                 </h3>
-                <span>
+                <div style={{ marginTop: '20px' }}>
                   <ul className="fh5co-social-icons">
-                    <li>
-                      <a target="_blank" href="https://twitter.com/RodLopezDev">
-                        <i className="icon-twitter2"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        target="_blank"
-                        href="https://www.facebook.com/rodrigolop3z"
-                      >
-                        <i className="icon-facebook2"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        target="_blank"
-                        href="https://www.linkedin.com/in/rodrigo-lopez-rojas/"
-                      >
-                        <i className="icon-linkedin2"></i>
-                      </a>
-                    </li>
+                    {HeaderINFO.socialMedia.map((item, index) => (
+                      <li key={index}>
+                        <a target="_blank" href={item.url}>
+                          <i className={item.icon}></i>
+                        </a>
+                      </li>
+                    ))}
                   </ul>
-                </span>
+                </div>
               </div>
             </div>
           </div>

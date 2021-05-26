@@ -1,0 +1,30 @@
+[
+  {
+    "role": "Full-Stack Engineer",
+    "company": "Continuum HQ",
+    "startWork": "07/2020",
+    "endWork": "Actualidad",
+    "details": "Encargado de liderar el proyecto ReactJS para agendamiento de citas para Teleconsulta. Respetando las métricas de calidad y cobertura de codigo, despliegue continuo, AB Testing, accesibilidad, usabilidad. Parte del equipo encargado de desarrollar el proyecto Back-End con DynamoDB, ExpressJS y envío de mails en una arquitectura serverless."
+  },
+  {
+    "role": "Software Engineer",
+    "company": "INDRA",
+    "startWork": "10/2019",
+    "endWork": "07/2020",
+    "details": "Soporte, mantenimiento e implementación de mejoras. Implementación de pasarelas de pago. Scrum, JavaEE, Spring, PL/SQL, Oracle, AWS Lambda, Api Gateway."
+  },
+  {
+    "role": "Full-Stack Developer",
+    "company": "CMAC Maynas",
+    "startWork": "02/2017",
+    "endWork": "09/2019",
+    "details": "Soporte, mantenimiento e implementación de mejoras. VB6.0, ASP.NET, ASP MVC4, Net.CORE, Android Development, JAVA SDK24, JavaEE, Reporting Services, MS SQL."
+  },
+  {
+    "role": "Web Developer",
+    "company": "IIAP",
+    "startWork": "2015",
+    "endWork": "2016",
+    "details": "Desarrollo aplicación móvil/web \"Amazonía - Glosario Móvil\", Desarrollo Sistema de reportes para el monitoreo de calidad de Agua. Desarrollo de Módulo Elearning. PHP, ASP MVC 4, LAravel, Android Development, HTML/CSS/Javascript."
+  }
+]
