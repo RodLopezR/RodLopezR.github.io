@@ -24,9 +24,9 @@ const App = () => {
         {Config.skills.show && <SkillsView />}
         {Config.services.show && <ServiceView />}
         {Config.blog.show && <BlogView />}
-        <div class="gototop js-top">
-          <a href="#" class="js-gotop">
-            <i class="icon-arrow-up22"></i>
+        <div className="gototop js-top">
+          <a href="#" className="js-gotop">
+            <i className="icon-arrow-up22"></i>
           </a>
         </div>
       </div>

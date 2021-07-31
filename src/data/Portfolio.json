@@ -1,0 +1,20 @@
+[
+    {
+        "name": "ProgramadoDeConfianza",
+        "link": "https://www.programadordeconfianza.com",
+        "type": "Blog",
+        "img": "/assets/images/ProgramadorDeConfianza.png"
+    },
+    {
+        "name": "MyProfile",
+        "link": "https://rodlopezr.github.io",
+        "type": "Porfolio",
+        "img": "/assets/images/Profile.png"
+    },
+    {
+        "name": "Nairakkata",
+        "link": "https://nairakkata.com",
+        "type": "Online Platform",
+        "img": "/assets/images/Nairakkata.png"
+    }
+]
