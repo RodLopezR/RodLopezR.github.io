@@ -1,4 +1,3 @@
-
 .work-portfolio {
   background-size: cover;
   background-position: center center;
@@ -11,7 +10,7 @@
   background-color: blue;
 }
 
-.work-portfolio img { 
+.work-portfolio img {
   width: 100%;
   height: 270px;
   position: absolute;

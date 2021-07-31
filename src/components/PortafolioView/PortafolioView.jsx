@@ -1,6 +1,6 @@
 import React from 'react';
 import JSON_Data from './../../data/Portfolio.json';
-import "./style.css";
+import './style.css';
 
 const PortafolioView = () => {
   return (
@@ -13,16 +13,9 @@ const PortafolioView = () => {
         </div>
         <div className="row">
           {JSON_Data.map((item, index) => (
-            <div 
-              className="col-md-3 text-center col-padding" 
-              key={index}
-            >
-              <a
-                href={item.link}
-                target="_blank"
-                className="work-portfolio"
-              >
-                <img src={item.img}/>
+            <div className="col-md-3 text-center col-padding" key={index}>
+              <a href={item.link} target="_blank" className="work-portfolio">
+                <img src={item.img} />
                 <div className="desc">
                   <h3>{item.name}</h3>
                   <span>{item.type}</span>

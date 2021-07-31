@@ -18,8 +18,7 @@ const BlogView = () => {
                 target="_blank"
                 className="blog-bg"
                 style={{
-                  backgroundImage:
-                    `url('https://programadordeconfianza.com/content/react-primeros-pasos/banner.png');`,
+                  backgroundImage: `url('https://programadordeconfianza.com/content/react-primeros-pasos/banner.png');`,
                 }}
               ></a>
               <div className="blog-text">

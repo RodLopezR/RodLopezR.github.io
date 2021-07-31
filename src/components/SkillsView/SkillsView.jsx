@@ -1,5 +1,7 @@
 import React from 'react';
 
+import SKILLS from '../../data/Skills.json';
+
 const SkillsView = () => {
   return (
     <div id="fh5co-skills" className="animate-box">
@@ -10,6 +12,33 @@ const SkillsView = () => {
           </div>
         </div>
         <div className="row">
+          {SKILLS.map((section, indexSection) => (
+            <div className="col-xs-6 col-md-3 col-lg-2" key={indexSection}>
+              {section.items.map((skill, indexSkill) => (
+                <div
+                  className="progress-wrap"
+                  key={`${indexSection}-${indexSkill}`}
+                >
+                  <h3>
+                    <span className="name-left">{skill.name}</span>
+                    <span className="value-right">{skill.value}%</span>
+                  </h3>
+                  <div className="progress">
+                    <div
+                      className="progress-bar progress-bar-5 progress-bar-striped active"
+                      role="progressbar"
+                      aria-valuenow={skill.value}
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      style={{ width: `${skill.value}%` }}
+                    ></div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          ))}
+        </div>
+        {/*<div className="row">
           <div className="col-xs-6 col-md-3 col-lg-2">
             <div className="progress-wrap">
               <h3>
@@ -486,7 +515,7 @@ const SkillsView = () => {
               </div>
             </div>
           </div>
-        </div>
+              </div>*/}
       </div>
     </div>
   );

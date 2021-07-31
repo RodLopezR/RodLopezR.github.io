@@ -1,0 +1,59 @@
+[
+  {
+    "name": "Languajes",
+    "items": [
+      { "name": "JavaScript", "value": 90 },
+      { "name": "PHP", "value": 80 },
+      { "name": "Java", "value": 80 },
+      { "name": "c#", "value": 90 },
+      { "name": "VB6.0", "value": 80 },
+      { "name": "Dart", "value": 40 },
+      { "name": "Swift", "value": 40 }
+    ]
+  },
+  {
+    "name": "JavaScript Lib/Frm",
+    "items": [
+      { "name": "React", "value": 95 },
+      { "name": "React Native", "value": 80 },
+      { "name": "NextJS", "value": 80 },
+      { "name": "GastbyJS", "value": 80 },
+      { "name": "Jest", "value": 80 },
+      { "name": "Enzyme", "value": 80 },
+      { "name": "Express", "value": 80 },
+      { "name": "JWT", "value": 90 },
+      { "name": "Redux", "value": 90 }
+    ]
+  },
+  {
+    "name": "DB",
+    "items": [
+      { "name": "MSSQL", "value": 90 },
+      { "name": "MySQL", "value": 80 },
+      { "name": "Oracle", "value": 60 },
+      { "name": "Postgres", "value": 60 },
+      { "name": "MongoDB", "value": 70 },
+      { "name": "DynamoDB", "value": 70 }
+    ]
+  },
+  {
+    "name": "Infra",
+    "items": [
+      { "name": "Docker", "value": 80 },
+      { "name": "Kubernetes", "value": 50 },
+      { "name": "Terraform", "value": 50 },
+      { "name": "Jenkins", "value": 60 },
+      { "name": "Serverless", "value": 70 },
+      { "name": "Git", "value": 90 }
+    ]
+  },
+  {
+    "name": "AWS",
+    "items": [
+      { "name": "EC2", "value": 40 },
+      { "name": "S3", "value": 40 },
+      { "name": "Lambdas", "value": 80 },
+      { "name": "API Gateway", "value": 70 }
+    ]
+  }
+]

@@ -15,12 +15,12 @@
     "show": true
   },
   "services": {
-    "show": true
+    "show": false
   },
   "skills": {
     "show": true
   },
   "blog": {
-    "show": true
+    "show": false
   }
 }

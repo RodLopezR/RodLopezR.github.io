@@ -21,7 +21,9 @@ const InfoView = () => {
               </li>
               <li>
                 <span className="first-block">Email:</span>
-                <span className="second-block">{HeaderINFO.me.aboutMe.email}</span>
+                <span className="second-block">
+                  {HeaderINFO.me.aboutMe.email}
+                </span>
               </li>
               <li>
                 <span className="first-block">Website:</span>
